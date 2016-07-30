@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FFmpeg_icon.svg.png" translatesAutoresizingMaskIntoConstraints="NO" id="CXK-cl-psE">
+                                <rect key="frame" x="21" y="70" width="560" height="403"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="560" id="8j5-OB-HBK"/>
+                                    <constraint firstAttribute="height" constant="403" id="M9k-Xy-zwC"/>
+                                    <constraint firstAttribute="width" secondItem="CXK-cl-psE" secondAttribute="height" multiplier="560:403" id="lrP-pB-8Dy"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="FFmpeg" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJM-1J-mbP">
+                                <rect key="frame" x="37" y="33" width="214.5" height="28"/>
+                                <color key="backgroundColor" red="1" green="0.82497560698939665" blue="0.48480957925954216" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yJM-1J-mbP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="Ayp-o8-Y0j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="CXK-cl-psE" secondAttribute="trailing" constant="-1" id="DWa-pW-6xP"/>
+                            <constraint firstItem="yJM-1J-mbP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="NRu-uI-REM"/>
+                            <constraint firstItem="CXK-cl-psE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="1" id="Nue-Re-Hpo"/>
+                            <constraint firstItem="CXK-cl-psE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="VF9-1x-Gi8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ffmpegImg" destination="CXK-cl-psE" id="ISp-Gs-cHA"/>
+                        <outlet property="lbVersion" destination="yJM-1J-mbP" id="tkc-06-yG9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="349" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FFmpeg_icon.svg.png" width="2000" height="2000"/>
+    </resources>
+</document>
